@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Andy Delgado - Web Developer</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/14b06553dd.js"></script>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +11,14 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+			<a href="#" class="name">Andy Delgado</a>
+			<nav>
+        <%= link_to "Articles", posts_path %>
+				<a href="#">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
     <%= yield %>
   </body>
 </html>
